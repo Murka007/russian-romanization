@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+    --background: #fbfbfb;
+    --foreground: #202020;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #202020;
+        --foreground: #fbfbfb;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
+}
