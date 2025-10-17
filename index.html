@@ -11,8 +11,13 @@
 
         <link rel="canonical" href="https://murka007.github.io/russian-romanization/">
         
-		<link href="./_app/immutable/assets/bundle.YkIGNYY-.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/bundle.CvQoLxLu.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.B1tReOfb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CjA66Pmm.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bl7tuHDp.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CsyS_S9c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.BkzRkB8n.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Ywk3rYiv.js">
     </head>
 
     <body data-sveltekit-preload-data="hover">
@@ -20,15 +25,18 @@
             
 			<script>
 				{
-					__sveltekit_161krec = {
+					__sveltekit_oqofrv = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/russian-romanization"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					import("./_app/immutable/bundle.CvQoLxLu.js").then((app) => {
-						app.start(element)
+					Promise.all([
+						import("./_app/immutable/entry/start.B1tReOfb.js"),
+						import("./_app/immutable/entry/app.BkzRkB8n.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
 					});
 				}
 			</script>
